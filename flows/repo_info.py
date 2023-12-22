@@ -17,4 +17,4 @@ if __name__ == "__main__":
     get_repo_info.from_source(
         "https://github.com/davidban77/prefect-poc.git",
         entrypoint="flows/repo_info.py:get_repo_info",
-    ).deploy(name="repo-info", work_pool_name="netpanda-k3s", build=False, push=False, labels=["k3s"])
+    ).deploy(name="repo-info", work_pool_name="netpanda-k3s", build=False, push=False)
